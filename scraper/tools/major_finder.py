@@ -5,7 +5,7 @@ import time
 import json
 
 # Set the path to the ChromeDriver executable. The driver for Apple ARM64 is included in the repo.
-service = Service('./chromedriver-mac-arm64/chromedriver')
+service = Service('./chromedriver-mac-x64/chromedriver')
 driver = webdriver.Chrome(service=service)
 
 # Navigate to the base URL for all schedules.

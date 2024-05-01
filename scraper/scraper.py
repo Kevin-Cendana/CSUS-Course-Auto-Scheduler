@@ -22,7 +22,7 @@ def setup_driver() -> webdriver.Chrome:
         webdriver.Chrome: The configured Chrome webdriver instance.
     """
     print("Setting up Chrome webdriver...")
-    service = Service('./chromedriver-mac-arm64/chromedriver')
+    service = Service('./chromedriver-mac-x64/chromedriver')
     options = Options()
     options.add_argument('--headless')
     driver = webdriver.Chrome(service=service, options=options)

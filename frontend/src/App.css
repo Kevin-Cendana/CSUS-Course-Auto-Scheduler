@@ -1,0 +1,112 @@
+/* Font - Cinzel */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('./fonts/SF-Pro-Display.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --csus-green: #1E4C38;
+}
+
+* {
+  font-family: "Cinzel", serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave {
+  position: fixed;
+  bottom: 0;
+  right: -20px;
+  height: clamp(8rem, 18vw, 15rem);
+  width: 100%;
+  min-width: 800px;
+  /*possibly do z index stuff */
+}
+
+.club-signature {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.powered-by {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.lhs, .rhs {
+  display: flex;
+  height: 100%;
+  padding-top: 25vh;
+}
+
+.lhs {
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  width: 60%;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 500;
+}
+
+img {
+  aspect-ratio: 1/1.3;
+  width: clamp(6rem, 8vw, 8rem);
+  margin: 15px;
+}
+
+.rhs {
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--csus-green);
+  color: white;
+  flex-grow: 1;
+}
+
+.instructions {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.get-started-button{
+  background-color: #113726;
+  border: 2px solid white;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.ds-logo {
+  height: 30px;
+  width: 80px;
+}
